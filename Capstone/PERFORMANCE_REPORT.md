@@ -15,7 +15,7 @@ the complete run-by-run output is in `results/bench_A.txt`,
 ## Measured results
 
 | Metric | A: ordered map | B: sorted vector | C: fixed tick array |
-
+| :--- | :---: | :---: | :---: |
 | Median total time (ms) | 98.6 | 82.6 | 48.9 |
 | Average add (ns) | 70.1 | 55.3 | 25.3 |
 | Median of run p99 add (ns) | 125 | 209 | 42 |
@@ -24,13 +24,16 @@ the complete run-by-run output is in `results/bench_A.txt`,
 | Average BBO (ns) | 13.2 | 12.9 | 12.8 |
 | Median of run p99 BBO (ns) | 42 | 42 | 42 |
 
+ ## xtrace results
+ 
 | xtrace counter | A: ordered map | B: sorted vector | C: fixed tick array |
-
+|---|---|---|---|
 | Cycles | 513,532 | 393,478 | 549,054 |
 | Instruction delivery bottleneck | 37.47% | 37.00% | 39.28% |
 | Discarded bottleneck | 20.00% | 19.92% | 20.00% |
 | Instruction processing bottleneck | 16.59% | 16.30% | 16.22% |
 | Useful cycles | 25.09% | 25.96% | 23.60% |
+
 
 ## Linux perf commands and output
 
